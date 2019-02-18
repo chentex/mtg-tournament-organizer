@@ -1,0 +1,9 @@
+version: '3'
+services:
+  web:
+    image: chentex/docker-nginx-centos:latest-centos7
+    ports:
+    - "5000:80"
+    volumes:
+    - .:/data/www
+  
