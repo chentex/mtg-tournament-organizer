@@ -5,7 +5,7 @@ function askNames() {
     }
     var pNamesHTML = "";
     for (let index = 1; index <= nPlayers; index++) {
-        pNamesHTML += "<div style=\"height: -moz-max-content;width: -moz-max-content;\"><label style=\"float: left;padding-right: 10px;width: 90px;\" class=\"label\">Player#"+index+":</label><input class=\"input\" type=\"text\" id=\"p"+index+"\"></div>";
+        pNamesHTML += "<div style=\"height: -moz-max-content;width: 330px;\"><label style=\"float: left;padding-right: 10px;width: 90px;\" class=\"label\">Player#"+index+":</label><input style=\"width: 220px;\" class=\"input\" type=\"text\" id=\"p"+index+"\"></div><br>";
     }
     pNamesHTML += "<div style=\"height: 60px;width: inherit;text-align:center; position:relative;padding-top:10px\"><button style=\"width: 120px;\" id=\"createRR\" onclick=\"createRR()\" class=\"btn\">Start</button></div>";
     document.getElementById("names").innerHTML =  pNamesHTML;
